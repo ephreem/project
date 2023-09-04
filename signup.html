@@ -1,0 +1,162 @@
+<!doctype html>
+<head>
+<title>
+sign up page
+</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(166, 191, 199, 0.7);
+    }
+.all{
+margin-left: 35%;
+}
+    .container {
+      padding: 20px;
+    }
+
+    .input-box {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .select-box {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .select-box select {
+      width: 100%;
+      height: 30px;
+    }
+
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+    .submitt-button button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="" srcset="" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./gsi 1.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="sign-in-btn"> <a href="./login.html">LOG IN</a> </button>
+    </div>
+  </header>
+  <div class="all">
+<form>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form>
+          <input type="text" class="input-box" placeholder="First Name" required></br>
+          <input type="text" class="input-box" placeholder="Last Name" required></br>
+          <input type="password" class="input-box" placeholder="Password" required></br>
+          <input type="email" class="input-box" placeholder="Your Email" required />
+        </form></div>
+    sex:
+    <br/>
+    <br/>
+    male<input type="radio" name="sex" value="M"/>
+  
+    female<input type="radio" name="sex" value="F"/>
+
+    others<input type="radio" name="sex" value="O"/>
+    <br/>
+    <br/>
+    <div class="select-box">
+      <select name="COUNTRY">
+        <option value="0">please select your country</option>
+        <option value="0">Rwanda</option>
+      </select><br/><br/>
+      <select name="province">
+        <option value="0">please select your province</option>
+        <option value="1">kigali city</option>
+        <option value="2">northern province</option>
+        <option value="3">western province</option>
+        <option value="4">eastern province</option>
+        <option value="5">southern province</option>
+    </select><br/><br/>
+      <select id="districtDropdown" required>
+        <option value="">Select a district</option>
+        <option value="Bugesera">Bugesera</option>
+        <option value="Gatsibo">Gatsibo</option>
+        <option value="kayonza">Kayonza</option>
+        <option value="Kirehe">Kirehe</option>
+        <option value="Ngoma">Ngoma</option>
+        <option value="Nyagatare">Nyagatare</option>
+        <option value="Rwamagana">Rwamagana</option>
+        <option value=" Kicukiro"> Kicukiro</option>
+        <option value="Gasabo">Gasabo</option>
+        <option value="Nyarugenge">Nyarugenge</option>
+        <option value="Burera">Burera</option>
+        <option value="Gakenke">Gakenke</option>
+        <option value="Gicumbi">Gicumbi</option>
+        <option value="Musanze">Musanze</option>
+        <option value="Rulindo">Rulindo</option>
+        <option value="Gisagara">Gisagara</option>
+        <option value="Huye">Huye</option>
+        <option value="Kamonyi">Kamonyi</option>
+        <option value="Muhanga">Muhanga</option>
+        <option value="Nyamagabe">Nyamagabe</option>
+        <option value="Nyanza">Nyanza</option>
+        <option value="Nyaruguru">Nyaruguru</option>
+        <option value="Ruhango">Ruhango</option>
+        <option value="Karongi">Karongi</option>
+        <option value="Ngororero">Ngororero</option>
+        <option value="Nyabihu">Nyabihu</option>
+        <option value="Nyamasheke">Nyamasheke</option>
+        <option value="Rubavu">Rubavu</option>
+        <option value=" Rusizi"> Rusizi</option>
+        <option value="Rutsiro">Rutsiro</option>
+      </select>
+    </div>
+    <div class="sector">
+      <form>
+        <input type="text" class="input-box" placeholder="Enter your home sector" required></br>
+        <input type="text" class="input-box" placeholder="Enter your home  Cell" required></br>
+        <input type="text" class="input-box" placeholder="Enter your home Village" required></br></br>
+      </form></div>
+   
+    <div class="submitt-button">
+ <button type="submit">submitt</button>
+ <p><a href="./login.html"> Already have an account? Click here to log in</a></p>
+</form>
+  </div>
+</body>
+</html>

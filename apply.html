@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Apply Here</h1>
+        <form id="applicationForm">
+            <div class="form-group">
+                <input type="text" id="fullName" placeholder="Enter full name of applicant" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="age" placeholder="Enter age of applicant" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="previousSchool" placeholder="Enter previous school of applicant" required>
+            </div>
+            <div class="form-group">
+                <select name="COUNTRY">
+                    <option value="0">please select your country</option>
+                    <option value="0">Rwanda</option>
+                  </select>
+            </div>
+
+            <div class="form-group">
+                <select name="province">
+                    <option value="0">please select your province</option>
+                    <option value="1">kigali city</option>
+                    <option value="2">northern province</option>
+                    <option value="3">western province</option>
+                    <option value="4">eastern province</option>
+                    <option value="5">southern province</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="districtDropdown" required>
+                    <option value="">Select a district</option>
+                    <option value="Bugesera">Bugesera</option>
+                    <option value="Gatsibo">Gatsibo</option>
+                    <option value="kayonza">Kayonza</option>
+                    <option value="Kirehe">Kirehe</option>
+                    <option value="Ngoma">Ngoma</option>
+                    <option value="Nyagatare">Nyagatare</option>
+                    <option value="Rwamagana">Rwamagana</option>
+                    <option value=" Kicukiro"> Kicukiro</option>
+                    <option value="Gasabo">Gasabo</option>
+                    <option value="Nyarugenge">Nyarugenge</option>
+                    <option value="Burera">Burera</option>
+                    <option value="Gakenke">Gakenke</option>
+                    <option value="Gicumbi">Gicumbi</option>
+                    <option value="Musanze">Musanze</option>
+                    <option value="Rulindo">Rulindo</option>
+                    <option value="Gisagara">Gisagara</option>
+                    <option value="Huye">Huye</option>
+                    <option value="Kamonyi">Kamonyi</option>
+                    <option value="Muhanga">Muhanga</option>
+                    <option value="Nyamagabe">Nyamagabe</option>
+                    <option value="Nyanza">Nyanza</option>
+                    <option value="Nyaruguru">Nyaruguru</option>
+                    <option value="Ruhango">Ruhango</option>
+                    <option value="Karongi">Karongi</option>
+                    <option value="Ngororero">Ngororero</option>
+                    <option value="Nyabihu">Nyabihu</option>
+                    <option value="Nyamasheke">Nyamasheke</option>
+                    <option value="Rubavu">Rubavu</option>
+                    <option value=" Rusizi"> Rusizi</option>
+                    <option value="Rutsiro">Rutsiro</option>
+                  </select>
+            </div>
+            <div class="form-group">
+        
+                    <input type="text" class="input-box" placeholder="Enter your home sector" required></br>
+         </div>
+                    <div class="form-group"><input type="text" class="input-box" placeholder="Enter your home  Cell" required></br></div>
+                    <div class="form-group"><input type="text" class="input-box" placeholder="Enter your home Village" required></br></div>
+                 
+            <div class="form-group">
+                <input type="text" id="combination" placeholder="Enter combination of applicant" required>
+            </div>
+            <div class="form-group">
+                <select id="classApplyingFor" required>
+                    <option value="" disabled selected>Select Class Applying For</option>
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                    <option value="S4">S4</option>
+                    <option value="S5">S5</option>
+                    <option value="S6">S6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="reason" placeholder="Enter reason for applying"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submitButton">Submit</button>
+                <button type="button" id="clearButton">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("applicationForm");
+            const clearButton = document.getElementById("clearButton");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Get the values from the form fields
+                const fullName = document.getElementById("fullName").value;
+                const age = document.getElementById("age").value;
+                const previousSchool = document.getElementById("previousSchool").value;
+                const previousClass = document.getElementById("previousClass").value;
+                const combination = document.getElementById("combination").value;
+                const classApplyingFor = document.getElementById("classApplyingFor").value;
+                const reason = document.getElementById("reason").value;
+
+                // Here, you can do something with the collected data, like sending it to a server
+
+                // Clear the form
+                form.reset();
+            });
+
+            clearButton.addEventListener("click", function () {
+                // Clear the form
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Information Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="container">
+        <div class="logo">
+          <img src="./logo.png" alt="" srcset="" class="logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./gsi 1.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="sign-in-btn"> <a href="./login.html">LOG IN</a> </button>
+      </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="container">
+        <h1>Welcome to School Information Hub</h1>
+        <p class="slogan">Your one-stop destination for school information</p>
+        <button class="join-btn"><a href="contact.html">Join Us</a></button>
+      </div>
+    </section>
+
+    <!-- Recommended Schools Section -->
+    <section class="recommended-schools">
+      <div class="container">
+        <div class="all">
+          <!-- <div class="school-card">
+            <img src="https://cdn.pixabay.com/photo/2021/04/27/04/19/girl-6210483_1280.jpg" alt="School 1" />
+            <h3>School 1</h3>
+            <p>10 available positions</p>
+            <button class="details-btn">Details</button>
+          </div> -->
+        </div>
+        
+        <!-- Add more school cards here -->
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription">
+      <div class="container">
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+          <input type="email" placeholder="Your Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="quick-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <button style="margin-right: 10px; padding: 10px;"><a href="https://twitter.com/Ep2Ephrem"><i class="fa fa-twitter"></i></a></button>
+            <button style="margin-right: 10px; padding: 10px;"><a href="https://www.instagram.com/epi_napkil/"><i class="fa fa-instagram"></i></a></button>
+            <button style="margin-right: 10px; padding: 10px;"><a href="https://www.facebook.com/M.EPi.77"><i class="	fa fa-facebook-square"></i></a></button>
+<p style="font-size:24px"><i class="fa fa-whatsapp"></i> +250780936868 </p>
+
+
+        </div>
+        <p>&copy; 2023 School Information Hub. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+
+const container = document.querySelector('.all');
+console.log(container)
+    const schools = [
+      {
+        name:"Lycée de Kigali",
+        province:"Kigali City",
+        district:"Nyarugenge",
+        email:'lyceenotredamedekigali@gmail.com',
+        combination:"A level: MPC,MPG & PCM and O level",
+        phone:"0788 302 539",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRfJGH0L7XSEomLnYtwziiGT3gfxUuzCQaWS7DT9Uhjol2TvcAgLN8nzcftlNwFKPRp8&usqp=CAU"
+      },
+      {
+        name:"Lycée Notre Dame de Cîteaux",
+        province:"Kigali",
+        district:"Nyarugenge",
+        email:'lyceenotredamedeciteau@gmail.com',
+    
+        combination:"A level: MEC,MEG & PCM and O level",
+        phone:"0788 567 837",
+        image:"https://www.globalsistersreport.org/files/Lyce%CC%81e%20Notre-Dame%20de%20Ci%CC%82teaux%20RESIZE.jpg"
+      },
+      {
+        name:"E.s Marie Adelaide",
+        email:'marieadelaideschool@gmail.com',
+        province:"Southern Province",
+        district:"Kamonyi",
+        combination:"O level & Alevel: LFK,MCB & PCB",
+        phone:"0788786331",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMms3kNPGIA2HHuHGtMhul2ehUjYz0E6fzKvpFbKnYPA_iDL_1BtW16o78UisbsyfVxc&usqp=CAU"
+      },
+      {
+        name:"Groupe Scolaire Marie Merci Kibeho",
+        email:'gsmariemercikibeho@gmail.com',
+        province:"Southern Province",
+        district:"Nyaruguru",
+        combination:" O level & A level: MPC,MPG,MCE & MEG",
+        phone:" 0788649731",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSZGj_wBrCg95rtgXx4PV8wg_sL2EONUzEQ&usqp=CAU"
+      },
+      {
+        name:"Groupe Scolaire Mere du Verbe Kibeho",
+        email:'gsmereduverbekibeho@gmail.com',
+        province:"Southern Province",
+        district:"Nyaruguru",
+        combination:"O level And A level: MCB,PCB & BCG",
+        phone:" 0786 398 557",
+        image:"https://pbs.twimg.com/media/ESuwbUzXQAEsud3.jpg"
+      },
+    ]
+
+    schools.map((xcl)=>{
+      const div = document.createElement('a')
+      div.href = `./apply.html`
+      const img = document.createElement('img')
+      const h = document.createElement('h3')
+      const p = document.createElement('p')
+      const combination = document.createElement('p')
+      const telephone = document.createElement('p')
+      const district = document.createElement('p')
+
+
+
+      div.classList.add('school-card')
+      img.src=xcl.image;
+      const textname = document.createTextNode(xcl.name)
+      const textcomb = document.createTextNode(xcl.combination)
+      const texttele = document.createTextNode(xcl.phone)
+      const textdistrict = document.createTextNode(xcl.district)
+
+      p.appendChild(textname);
+      combination.appendChild(textcomb)
+      telephone.appendChild(texttele)
+      district.appendChild(textdistrict)
+      div.innerHTML = img.outerHTML + p.outerHTML + combination.outerHTML + telephone.outerHTML + district.outerHTML;
+      // div.addEventListener('click',()=>{
+      //   console.log('wefewf')
+      // })
+      container.appendChild(div)
+    })
+
+    container.te
+  </script>
+</html>

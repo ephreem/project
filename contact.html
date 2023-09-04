@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  /* Reset some default styles */
+body, h1, h2, p, ul, li, form, button, input, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Contact Us Page */
+.contact-page {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contact-info {
+  width: 50%;
+  position: relative;
+}
+
+.contact-background {
+  background-image: url("https://img.freepik.com/free-vector/mail-sent-concept-illustration_114360-96.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a0a0a;
+  padding: 20px;
+}
+
+.contact-background h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-background p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+.contact-form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-form form input, .contact-form form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-form form button:hover {
+  background-color: #444;
+}
+
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="" srcset="" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./gsi 1.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="sign-in-btn"> <a href="./login.html">LOG IN</a> </button>
+    </div>
+  </header>
+  <div class="contact-page">
+    <div class="contact-info">
+      <div class="contact-background">
+        <h1>Contact Us</h1>
+        <p>Reach out to us for any queries or information.</p>
+        <div class="social-media-icons">
+            <button style="margin-right: 10px; padding: 10px;"><a href="https://twitter.com/Ep2Ephrem"><i class="fa fa-twitter"></i></a></button>
+            <button style="margin-right: 10px; padding: 10px;"><a href="https://www.instagram.com/epi_napkil/"><i class="fa fa-instagram"></i></a></button>
+            <button style="margin-right: 10px; padding: 10px;"><a href="https://www.facebook.com/M.EPi.77"><i class="	fa fa-facebook-square"></i></a></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Global styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  background-color: #333;
+  color: #fff;
+
+  padding: 10px 0;
+}
+.top-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav .logo {
+  font-size: 24px;
+}
+
+.top-nav nav ul {
+  list-style: none;
+}
+
+.top-nav nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.top-nav nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav .sign-in-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-image: url("https://cdn.pixabay.com/photo/2021/04/27/04/19/girl-6210483_1280.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+}
+
+.welcome-section .slogan {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.welcome-section .join-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Recommended Schools Section */
+.recommended-schools {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.recommended-schools .school-card {
+  display: inline-block;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.recommended-schools .school-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recommended-schools .school-card h3 {
+  font-size: 20px;
+}
+
+.recommended-schools .school-card p {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.recommended-schools .school-card .details-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Contact Us Section */
+.contact-us {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.contact-us h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-us form input,
+.contact-us form textarea,
+.subscription form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us form button,
+.subscription form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .quick-links ul {
+  list-style: none;
+}
+
+footer .quick-links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer .quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-media img {
+  width: 25px;
+  height: 25px;
+}
+.logo{
+  width: 40px;
+  border-radius: 50%;
+}
+.social-media a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a{
+  padding: 10px;
+  border-radius: 10px;
+}
+nav ul li a:hover {
+  background-color: rgb(41, 16, 180);
+}

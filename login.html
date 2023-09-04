@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('background-image.jpg');
+  background-size: cover;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(166, 191, 199, 0.7); 
+}
+
+.login-form-container {
+  padding: 20px;
+  background-color: rgb(79, 73, 90);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form-container h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.login-form button:hover {
+  background-color: #444;
+}
+.login-form-container p{
+  text-decoration: none;
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="top-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="" srcset="" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./gsi 1.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="sign-in-btn"> <a href="./login.html">LOG IN</a> </button>
+    </div>
+  </header>
+  <div class="login-page">
+    <div class="login-form-container">
+      <h1>Login</h1>
+      <form class="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Sign In</button>
+        <p><a href="./signup.html"> Don't have account?  click here to Create account.</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
