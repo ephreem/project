@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  /* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Services Page */
+.services-page {
+  padding: 20px;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-title h1 {
+  font-size: 36px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #888;
+}
+
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="" srcset="" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./gsi 1.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="sign-in-btn"> <a href="./login.html" onclick="logingout()">LOG OUT</a> </button>
+    </div>
+  </header>
+  <div class="services-page">
+    <div class="services-title">
+      <h1>Our Services</h1>
+      <p>Explore the range of services we offer.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-card">
+        <h2>Applying for Classes</h2>
+        <p>Apply for any available class at different schools.</p>
+      </div>
+      <div class="service-card">
+        <h2>Getting School Information</h2>
+        <p>Get information about different schools.</p>
+      </div>
+      <div class="service-card">
+        <h2>Parental Assistance</h2>
+        <p>Help parents find schools for their children.</p>
+      </div>
+      <div class="service-card">
+        <h2>Student Registration</h2>
+        <p>Assist parents in registering their children at new available schools.</p>
+      </div>
+      <div class="service-card">
+        <h2>Smooth School Transition</h2>
+        <p>Guide students through transitioning between schools.</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./runpage.js"></script>
+
+</html>

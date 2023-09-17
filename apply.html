@@ -60,35 +60,35 @@
 <body>
     <div class="form-container">
         <h1>Apply Here</h1>
-        <form id="applicationForm">
+        <form id="applicationForm" action="apply1.php" method="POST">
             <div class="form-group">
-                <input type="text" id="fullName" placeholder="Enter full name of applicant" required>
+                <input type="text" name="names" id="fullName" placeholder="Enter full name of applicant" required>
+            </div>
+            <div class="form-group" >
+                <input type="text" name="age" id="age" placeholder="Enter age of applicant" required>
             </div>
             <div class="form-group">
-                <input type="number" id="age" placeholder="Enter age of applicant" required>
+                <input type="text" name="school" id="previousSchool" placeholder="Enter previous school of applicant" required>
             </div>
             <div class="form-group">
-                <input type="text" id="previousSchool" placeholder="Enter previous school of applicant" required>
-            </div>
-            <div class="form-group">
-                <select name="COUNTRY">
-                    <option value="0">please select your country</option>
-                    <option value="0">Rwanda</option>
+                <select name="country">
+                    <option value="please select your country">please select your country</option>
+                    <option value="Rwanda">Rwanda</option>
                   </select>
             </div>
 
             <div class="form-group">
                 <select name="province">
-                    <option value="0">please select your province</option>
-                    <option value="1">kigali city</option>
-                    <option value="2">northern province</option>
-                    <option value="3">western province</option>
-                    <option value="4">eastern province</option>
-                    <option value="5">southern province</option>
+                    <option value="please select your province">please select your province</option>
+                    <option value="kigali city">kigali city</option>
+                    <option value="northern province">northern province</option>
+                    <option value="western province">western province</option>
+                    <option value="eastern province">eastern province</option>
+                    <option value="southern province">southern province</option>
                 </select>
             </div>
             <div class="form-group">
-                <select id="districtDropdown" required>
+                <select id="districtDropdown" required name="district">
                     <option value="">Select a district</option>
                     <option value="Bugesera">Bugesera</option>
                     <option value="Gatsibo">Gatsibo</option>
@@ -124,16 +124,16 @@
             </div>
             <div class="form-group">
         
-                    <input type="text" class="input-box" placeholder="Enter your home sector" required></br>
+                    <input type="text" name="sector" class="input-box" placeholder="Enter your home sector" required></br>
          </div>
-                    <div class="form-group"><input type="text" class="input-box" placeholder="Enter your home  Cell" required></br></div>
-                    <div class="form-group"><input type="text" class="input-box" placeholder="Enter your home Village" required></br></div>
+                    <div class="form-group" ><input name="cell" type="text" class="input-box" placeholder="Enter your home  Cell" required></br></div>
+                    <div class="form-group" ><input name="village" type="text" class="input-box" placeholder="Enter your home Village" required></br></div>
                  
             <div class="form-group">
-                <input type="text" id="combination" placeholder="Enter combination of applicant" required>
+                <input type="text" name="combination" id="combination" placeholder="Enter combination of applicant" required>
             </div>
             <div class="form-group">
-                <select id="classApplyingFor" required>
+                <select id="classApplyingFor" required name="class">
                     <option value="" disabled selected>Select Class Applying For</option>
                     <option value="S1">S1</option>
                     <option value="S2">S2</option>
@@ -144,16 +144,17 @@
                 </select>
             </div>
             <div class="form-group">
-                <textarea id="reason" placeholder="Enter reason for applying"></textarea>
+                <textarea id="reason" name="reason" placeholder="Enter reason for applying"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" id="submitButton">Submit</button>
-                <button type="button" id="clearButton">Clear</button>
+                <button name="submit"> submit</button>
+             <!-- '   <button type="submit"  name="submit">Submit</button>
+                <button type="button" id="clearButton">Clear</button>' -->
             </div>
         </form>
     </div>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const form = document.getElementById("applicationForm");
             const clearButton = document.getElementById("clearButton");
@@ -181,6 +182,6 @@
                 form.reset();
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>

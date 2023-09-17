@@ -17,13 +17,13 @@
         </div>
         <nav>
           <ul>
-            <li><a href="./gsi 1.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./service.html">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./home2.html">Home</a></li>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Services</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
           </ul>
         </nav>
-        <button class="sign-in-btn"> <a href="./login.php">LOG IN</a> </button>
+        <button class="sign-in-btn"> <a href="./login.html" onclick="logingout()">LOG OUT</a> </button>
       </div>
     </header>
 
@@ -56,11 +56,11 @@
     <section class="contact-us">
       <div class="container">
         <h2>Contact Us</h2>
-        <form  action="comment.php" method="post">
-          <input type="text" name="fname" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" name="submit">Submit</button>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -154,17 +154,7 @@ console.log(container)
 
     schools.map((xcl)=>{
       const div = document.createElement('a')
-      div.addEventListener('click',()=>{
-        let user=localStorage.getItem('user')
-        if (user ==true) {
-          console.log('loged in')
-        }
-        else{
-          console.log('not loged ')
-
-        }
-      })
-      // div.href = `./apply.html`
+      div.href = `./apply.html`
       const img = document.createElement('img')
       const h = document.createElement('h3')
       const p = document.createElement('p')
@@ -194,4 +184,5 @@ console.log(container)
 
     container.te
   </script>
+  <script src="./runpage.js"></script>
 </html>
